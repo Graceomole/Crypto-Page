@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-gray-100 w-full  justify-center  px-8">
+        <div class="mx-auto ">
+            <div class="py-5 tracking-wider text-xs">
+                <div class="flex justify-between md:space-x-12 relative items-center w-full ">
+                    <div class="flex space-x-2 items-center ">
+                        <img class="h-5 w-5 " src="images/Screenshot 2025-03-25 103859.png" alt="">
+                        <a  class=" text-lg font-extrabold " href="#"><p>Coinco</p></a>
+                    </div>
+                    <div class=" items-center w-full justify-between hidden md:flex">
+                        <div class="text-md font-bold space-x-4 flex items-center list-none  ">
+                            <a class="text-nowrap pt-4 md:pt-0"  href="#"> <li>Events</li></a>
+                            <a class="text-nowrap pt-4 md:pt-0" href="#"><li>Speakers</li></a>
+                            <a class="text-nowrap pt-4 md:pt-0" href="#"><li>Partners</li></a>
+                            <a class="text-nowrap pt-4 md:pt-0" href="#"><li>About Us</li></a>
+                        </div>
+                        <div class="flex items-center gap-2  ">
+                            <div class="flex items-center  ">
+                                <a class="md:pl-8 md:mr-4 md:pt-0 pt-4 " href="#"><p>Help</p></a>
+                                <i class="fa fa-solid fa-angle-down"></i>
+                            </div>
+                            <a class="md:pl-4 mt-4 md:mt-0 md:ml-8 border hover:bg-orange-500  hover:text-white border-black py-2 px-5  rounded-3xl text-nowrap"  href="#"><button>Contact Us</button></a>
+                            <a class="uppercase md:ml-4 text-nowrap py-2 mt-2 md:mt-0 px-6 bg-green-500 text-white rounded-2xl " href="login.html">Login</a>
+                        </div>
+                    </div>
+                    <div  class="flex justify-end  md:hidden">
+                        <button class="cursor-pointer" onclick="handleToggleDiv()">
+                            <i id="toggleButton"  class="fa fa-solid fa-bars text-2xl"></i>
+                        </button>
+                            <!-- <span  class="text-2xl"><i class="fa fa-thin fa-bars"></i></span> -->
+                    </div>
+                    
+                </div>
+                <div id="togglerDiv" class=" absolute h-[80vh] w-[80vw] bg-white hidden md:hidden">
+                    <div class=" items-center w-full space-y-12  md:flex">
+                        <div class="text-md font-bold flex-col flex items-center space-y-1  list-none  ">
+                            <a class="md:pl-8 pt-10 md:pt-0 "  href="#"> <li>Events</li></a>
+                            <a class="md:pl-8 pt-4 md:pt-0 " href="#"><li>Speakers</li></a>
+                            <a class="md:pl-8 pt-4 md:pt-0" href="#"><li>Partners</li></a>
+                            <a class="md:pl-8 pt-4 md:pt-0 lg:" href="#"><li>About Us</li></a>
+                        </div>
+                        <div class="flex flex-col justify-center  items-center gap-2  ">
+                            <div class="flex items-center space-x-1  sp ">
+                                <a class=" " href="#"><p>Help</p></a>
+                                <i class="fa fa-solid fa-angle-down"></i>
+                            </div>
+                            <a class="md:pl-4 mt-4 md:mt-0 md:ml-8 border hover:bg-orange-500  hover:text-white border-black py-2 px-5  rounded-3xl "  href="#"><button>Contact Us</button></a>
+                            <a class="uppercase md:ml-4 py-2 mt-2 md:mt-0 px-6 bg-green-500 text-white rounded-2xl " href="login.html">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- nav bar ends -->
+
+                <div class="flex items-center flex-col-reverse sm:flex-row  justify-between w-full md:p-6">
+                    <div class="w-[100%] sm:w-[47%] pb-10">
+
+                        <h3 class="text-5xl sm:text-4xl md:text-5xl  lg:text-7xl xl:text-8xl text-black">We make <span class="font-bold">progress on crypto way</span></h3>
+                        <div class="flex w-[270px] md:w-[250px] py-6 md:py-5 justify-between lg:w-[350px] xl:w-[450px] ">
+                            <button class="text-sm py-2 px-5 md:px-3 md:py-1 md:text-nowrap text-nowrap lg:px-4 px-12 items-center bg-orange-600 text-white font-bold rounded-3xl border border-black">Get Access</button>
+                            <p class="text-sm mr-4 md:mr-8 md:ml-4 font-bold text-black self-center ">$16.80</p>
+                            <p class="text-xs mr-8 self-center l">Monthly <br> price</p>
+                        </div>
+                    </div>
+                    <div class="w-[100%] sm:w-[50%] py-10 ">
+                        <img class=" w-[100%]" src="images/Screenshot 2025-03-25 102552.png" alt="">
+                    </div>
+                </div>
+
+                <div class="flex items-center flex-col sm:flex-row justify-between w-fill md:p-6 ">
+                    <div class="w-[100%] sm:w-[40%] md:w-[40%] lg:w-[45%]  py-5 ">
+                        <div class="flex items-center space-x-4 space-y-8">
+                            <div class="self-start ">
+                                <img src="images/Screenshot 2025-03-25 135614.png" alt="">
+                            </div>
+                            <div class="bg-gray-200 w-72 sm:w-64 md:w-56 lg:w-80 xl:w-96 border border-black p-4 rounded-3xl ">
+                                <div class="flex space-x-4 items-center">
+                                    <div class="flex  ">
+                                        <p class="bg-gray-800 h-10 w-10  rounded-full" ></p>
+                                        <p class="bg-yellow-300 -ml-4 h-10 w-10 rounded-full" ></p>
+                                    </div>
+                                    <p class="text-nowrap">See how it works</p>
+                                </div>
+                                <div class="py-4">
+                                    <p>Art is everywhere. <br>The overview</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[100%] sm:w-[50%] md:w-[45%]  py-10 md:mt-0" >
+                        <div class="flex space-x-4 items-center">
+                            <p class="py-1 uppercase px-6 border border-black bg-white rounded-2xl">Team</p>
+                            <div class="flex items-center justify-center">
+                                <img class="h-8 w-8 rounded-full" src="images/albert-dera-ILip77SbmOE-unsplash.jpg" alt="">
+                                <img class="h-8 w-8  rounded-full" src="images/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="">
+                                <img class="h-8 w-8 rounded-full" src="images/vince-fleming-j3lf-Jn6deo-unsplash.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="max-w-96  mt-5">
+                            <p>Our team is passionate about sharing their knowledge and experience with others. We are always available to offers </p>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    
+    <div class="bg-gray-100 justify-center  pl-8 pr-8">
+        <div class="mx-auto ">
+           
+            <!-- <div class="pt-10 flex tracking-wider text-xs  flex-col md:justify-between justify-items md:flex-row space-between">
+                <div class="list-none flex-start items-center justify-center justify-items-end flex flex-col md:flex-row">
+                    <a class=" font-semibold  " href="#"><li>Coinco</li></a>
+                    <a class="md:pl-8 pt-4 md:pt-0"  href="#"> <li>Events</li></a>
+                    <a class="md:pl-8 pt-4 md:pt-0" href="#"><li>Speakers</li></a>
+                    <a class="md:pl-8 pt-4 md:pt-0" href="#"><li>Partners</li></a>
+                    <a class="md:pl-8 pt-4 md:pt-0" href="#"><li>About Us</li></a>
+                </div>
+                <div class="flex md:mr-4 list-none md:space-between items-center flex-col justify-center md:flex-row ">
+                    <a class="md:pl-8 md:mr-4 md:pt-0 pt-4 " href="#"><li>Help</li></a>
+                    <a class="md:pl-4 mt-4 md:mt-0 md:ml-8 border hover:bg-orange-500  hover:text-white border-black py-2 px-5  rounded-3xl "  href="#"><button>Contact Us</button></a>
+                    <a class="uppercase md:ml-4 py-2 mt-2 md:mt-0 px-6 bg-green-500 text-white rounded-2xl " href="login.html">Login</a>
+                </div>
+            </div>
+            <div class="pt-10 flex tracking-wider text-xs  flex-col md:justify-between justify-items md:flex-row space-between">
+                <div class="list-none flex-start items-center justify-center justify-items-end flex flex-col md:flex-row">
+                    <a class=" font-semibold  " href="#"><li>Coinco</li></a>
+                    <a class="md:pl-8 pt-4 md:pt-0"  href="#"> <li>Events</li></a>
+                    <a class="md:pl-8 pt-4 md:pt-0" href="#"><li>Speakers</li></a>
+                    <a class="md:pl-8 pt-4 md:pt-0" href="#"><li>Partners</li></a>
+                    <a class="md:pl-8 pt-4 md:pt-0" href="#"><li>About Us</li></a>
+                </div>
+                <div class="flex md:mr-4 list-none md:space-between items-center flex-col justify-center md:flex-row ">
+                    <a class="md:pl-8 md:mr-4 md:pt-0 pt-4 " href="#"><li>Help</li></a>
+                    <a class="md:pl-4 mt-4 md:mt-0 md:ml-8 border hover:bg-orange-500  hover:text-white border-black py-2 px-5  rounded-3xl "  href="#"><button>Contact Us</button></a>
+                    <a class="uppercase md:ml-4 py-2 mt-2 md:mt-0 px-6 bg-green-500 text-white rounded-2xl " href="login.html">Login</a>
+                </div>
+                <div class="flex justify-end">
+                    <i class="fa fa-solid fa-xmark text-2xl md:hidden"></i>
+                     <span class="text-2xl md:hidden"><i class="fa fa-thin fa-bars"></i></span>
+                </div>
+            </div> -->
+          
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

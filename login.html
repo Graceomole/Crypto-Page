@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+</head>
+<body>  
+    <div class="flex bg-purple-800 bg-cover bg-no-repeat bg-center  mx-auto justify-center min-h-screen items-center flex-col justify-center bg " style="background-image: url(images/luke-chesser-eICUFSeirc0-unsplash.jpg)">
+        <div class="border border-white p-6 ">
+            <form action="" id="loginForm">
+                <div>
+                    <h1 class="text-center text-2xl text-white  mb-10">Login Page</h1>
+                    <input class="py-2 px-10 border text-sm  border-gray-200 rounded-lg" placeholder="Enter your email" for="email" name="email"id="email" type="email" >
+                </div>
+                <div class="mt-10 ">
+                    <input  class="py-2 px-10 border border-gray-200 rounded-lg text-sm" id="password" type="password" name="password" placeholder="Password" id="">
+                </div>
+                <div class="mt-10 text-center">
+                    <button type="submit"  class="uppercase font-bold rounded-2xl  py-2 px-6 hover:bg-purple-800 duration:200  hover:text-white  text-center bg-white ">
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+         document.getElementById("loginForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get email and password values
+        let email = document.getElementById("email").value.trim();
+        let password = document.getElementById("password").value.trim();
+
+        // Check if both fields are filled
+        if (email === "" || password === "") {
+            alert("Please fill in both email and password fields.");
+        } else {
+            // Redirect to another page
+            window.location.href = "index.html"; // Change this to your target page
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
